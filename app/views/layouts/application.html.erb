@@ -19,7 +19,7 @@
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Theme CSS -->
-  <link href="/css/freelancer.min.css" rel="stylesheet">
+  <link href="/css/freelancer.min.css?=1" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -35,7 +35,12 @@
   <meta property="og:image" content="썸네일 이미지 절대 경로" />
   <!--sns 포스팅 될 타이틀 값-->
   <meta property="og:title" content="title 입력" />
+  <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=	8a952cf2fface3940152207d01807d01"></script>
+
   <!-- sns head 설정 끄읏!-->
+  
+
+
 </head>
 <body id="page-top" class="index">
 <%= yield %>
@@ -50,6 +55,7 @@
     <script src="/js/contact_me.js"></script>
     <!-- Theme JavaScript -->
     <script src="/js/freelancer.min.js"></script>
+   
     <script>
     $(window).load(function() {
     $('.post-module').hover(function() {
