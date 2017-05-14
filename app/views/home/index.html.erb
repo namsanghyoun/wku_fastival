@@ -3,14 +3,16 @@
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--로고그림-->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="/img/wku2.png"/></a>
+                <a class="navbar-brand" href="#page-top"><%=image_tag "wku2.png"%></a>
+                <a class="navbar-brand cross" href="#page-top"><%= image_tag "cross.png"%></a>
+                <a class="navbar-brand" href="#page-top"><%= image_tag "chong.png"%></a>
             </div>
-
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -24,10 +26,10 @@
                         <a href="#lineup">라인업</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#nanjang">난장</a>
+                        <a href="#nanjang">난장정보</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#jujum">주점</a>
+                        <a href="#jujum">주점정보</a>
                     </li>
                     
                     <li class="page-scroll">
@@ -43,17 +45,7 @@
     <!-- Header -->
     <header>
         <div class="container" id="maincontent" tabindex="-1">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="merong">
-                        <div class="intro-text">
-                            <h1 class="name">원탑대동제</h1>
-                            <hr class="star-light">
-                            <span class="skills">2017.05.23 ~ 2017.05.25</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </header>
 
@@ -74,13 +66,13 @@
                 </div>
                 <div class="iljung2-div">
                     <div id="div1"  class="iljung-iljung-div">
-                        <img src="/img/portfolio/cabin.png"/>
+                        <%= image_tag "cabin.png"%>
                     </div>
                     <div id="div2"  class="iljung-iljung-div">
-                        <img src="/img/portfolio/cake.png"/>
+                        <%= image_tag "cake.png"%>
                     </div>
                     <div id="div3"  class="iljung-iljung-div">
-                        <img src="/img/portfolio/circus.png"/>
+                        <%= image_tag "circus.png"%>
                     </div>
                 </div>
             </div>  
@@ -102,106 +94,83 @@
                     <div class="lineup-date-div"><p class="btn btn2" rel="div2-2">5.24(수)</p></div>
                     <div class="lineup-date-div"><p class="btn btn2" rel="div3-2">5.25(목)</p></div>
                 </div>
-                <div class="lineup-div">
+                <div class="lineup2-div">
                     <div id="div1-2"  class="lineup-lineup-div">
-                        <img src="/img/portfolio/cabin.png"/>
+                        <%= image_tag "cabin.png"%>
                     </div>
                     <div id="div2-2"  class="lineup-lineup-div">
-                        <img src="/img/portfolio/cake.png"/>
+                        <%= image_tag "cake.png"%>
                     </div>
                     <div id="div3-2"  class="lineup-lineup-div">
-                        <img src="/img/portfolio/circus.png"/>
+                        <%= image_tag "circus.png"%>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!--난장섹션임.-->
-<section class="success2" id="nanjang">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>난장정보</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <!--첫번째 포스트-->
-              <div class="col-md-4">
-                <div class="column">
-                  <!-- Post-->
-                  <div class="post-module"> 
-                    <!-- Thumbnail-->
-                    <div class="thumbnail">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt=""> </div>
-                    <!-- Post Content-->
-                    <div class="post-content">
-                      <div class="category">Catagories</div>
-                      <h1 class="title">Lorem Ipsum</h1>
-                      <h2 class="sub_title">LEAD COORDINATOR</h2>
-                      <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                      <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--두번째 포스트-->
-              <div class="col-md-4">
-                <div class="column">
-                  <!-- Post-->
-                  <div class="post-module"> 
-                    <!-- Thumbnail-->
-                    <div class="thumbnail">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt=""> </div>
-                    <!-- Post Content-->
-                    <div class="post-content">
-                      <div class="category">Catagories</div>
-                      <h1 class="title">Lorem Ipsum</h1>
-                      <h2 class="sub_title">LEAD COORDINATOR</h2>
-                      <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                      <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-            <!--세번째 포스팅-->
-              <div class="col-md-4">
-                <div class="column">
-                  <!-- Post-->
-                  <div class="post-module"> 
-                    <!-- Thumbnail-->
-                    <div class="thumbnail">
-                      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" class="img-responsive" alt=""> </div>
-                    <!-- Post Content-->
-                    <div class="post-content">
-                      <div class="category">Catagories</div>
-                      <h1 class="title">Lorem Ipsum</h1>
-                      <h2 class="sub_title">LEAD COORDINATOR</h2>
-                      <p class="description">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
-                      <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-</section>
+    <!--난장섹션임.-->
+    <section class="success2" id="nanjang">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2>난장정보</h2>
+              <hr class="star-light">
+          </div>
+      </div>
+      
+      <!--모달시작-->
+      <div class="row">
+      <div class="col-md-3">
+      <%= image_tag "by.jpg", id: "myImg", alt: "Trolltunga, Norway"%>
+      </div>
+      <div class="col-md-3">
+      <%= image_tag "by.jpg", id: "myImg", alt: "Trolltunga, Norway"%>
+      </div>
+      </div>
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+    <!--모달 끝-->
+    </div>
+    </section>
+    
 <!--주점섹션임-->
-<section class="success3" id="jujum">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>주점정보</h2>
-                    <hr class="star-light">
-                </div>
+    <section class="success3" id="jujum">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <h2>주점정보</h2>
+              <hr class="star-light">
+          </div>
+      </div>
+      <div class="row">
+        <!--지도 섹션임-->
+        <div id="map"></div>
+        <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>
+        <!-- 주점정보 -->
+        
+        <div class="acc">
+          
+          <% @jujums.each do |j| %>
+            <button class="accordion" id="acc-panel<%=j.id%>-btn"><%= j.name%> <span>&#9662;</span></button>
+            <div class="panel" id="acc-panel<%= j.id%>" >
+              <button class="like-btn"value="<%= j.id%>"><img src="/img/like.png"/></button>
+              <input type="number" id="<%= j.id%>-hidden"value="<%=@merong_count[j.id]%>" style="display:none;"/>
+              <input type="hidden" value="<%= @merong_no[j.id]%>" id="<%=j.id%>-no"/>
+              <span id="<%= j.id%>-count" value="<%= j.id%>"><%=@merong_count[j.id]%></span>
+              <img src="/img/portfolio/cabin.png"/>
+              <p>컴공은짱이얌 ㅎㅅㅎㅅㅎㅅㅎ~!!!</p>
             </div>
-            <div class="row">
-                
-                <div id="map" ></div>
-                
-            </div>
+          <% end %>
+          
         </div>
+    </div>
     </section>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -241,10 +210,11 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>멋쟁이사자처럼 at Wku</h3>
+                        <h3>멋쟁이사자처럼 at 원광대학교</h3>
                     </div>
                     <div class="footer-col col-md-4">
                         <h3>Developer</h3>
+                        <div class="fb-like" data-href="https://wku-fastival-social-science.c9users.io/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true" data-colorscheme="dark"></div>
                         <ul class="list-inline">
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/17884116_1155365071258305_7640656070213554283_n.jpg?oh=d7ee30ce75966b0707b12fd1dafbc8e6&oe=597B8AFC" alt="cha" />
@@ -280,240 +250,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                         &copy; Likelion at Wku 2017
+                         <a href="https://likelion.net/" target="_blink" style="text-decoration:none">&copy; Likelion at WKU 2017</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="/img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<script>
+  
+//좋아요
+ $(".like-btn").click(function(){
+        var id = this.value;
+        var ho = parseInt($("#"+id+"-hidden").val());
+        var no = $("#"+id+"-no").val();
+        var he = ho+1;
+            if(no==0){
+               $.ajax({
+                    url:'/home/ho',
+                    method:"get",
+                    data:{"jujum_id":id},
+                    success:function(data){
+                        $("#"+id+"-count").text(he);
+                    },
+                    error:function(){
+                     }
+                })
+            }
+        });
+</script>
+
+    

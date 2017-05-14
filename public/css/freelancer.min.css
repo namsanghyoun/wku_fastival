@@ -1,12 +1,24 @@
+@import "compass/css3";
+
+@import "compass/css3/shared";
+
+
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden}p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#18BC9C}h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 3px;text-align:center;max-width:250px;margin:25px auto 30px}hr.star-light:after,hr.star-primary:after{content:"";font-family:FontAwesome;display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}hr.star-light{border-color:#fff}hr.star-light:after{background-color:#18BC9C;color:#fff}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#fff;color:#2C3E50}.img-centered{margin:0 auto}
+ */
+ body{
+    font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden;
+    -ms-content-zooming: none;
+    -ms-touch-action: pan-x pan-y;
+ 
+ }
+ p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#18BC9C}h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 3px;text-align:center;max-width:250px;margin:25px auto 30px}hr.star-light:after,hr.star-primary:after{content:"";font-family:FontAwesome;display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}hr.star-light{border-color:#fff}hr.star-light:after{background-color:#18BC9C;color:#fff}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#fff;color:#2C3E50}.img-centered{margin:0 auto}
  header{
     text-align:center;background:none;color:#fff; 
-    background-image: url(http://cfile21.uf.tistory.com/image/277D2948564EE296035BD8);
     background-position: center center;
+    background-image: url('/img/main.jpg');
     background-size: cover;
     height: 600px;
     min-height:100%;
@@ -20,10 +32,16 @@
 }
 .navbar-brand img{
     height:100%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.cross img{
+    
 }
 @media (max-width:767px){
     .navbar-brand{
-        padding:10px;
+        padding:10px 3px;
     }
     .navbar-brand img{
         height:100%;
@@ -31,7 +49,14 @@
     
     hr.star-light,hr.star-primary{
         border-top:solid 2px;text-align:center;max-width:180px;}
-  
+    
+    .navbar-brand img{
+        height:100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    
 }
 
 
@@ -56,11 +81,16 @@
     display:none;
 }
 
+
+
 .iljung-div{
     display:flex;
     flex-direction:row;
     justify-content : space-around;
     padding:20px 0px;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .iljung-date-div:first-child .btn{
     border:1px solid #1f2a59;
@@ -91,11 +121,24 @@
     
 }
 
+
+#lineup .star-light{
+    border-color:#bd2025; 
+}
 .lineup-div{
     display:flex;
     flex-direction:row;
     justify-content : space-around;
     padding:20px 0px;
+}
+.lineup2-div{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lineup2-div img{
+    width:100%;
 }
 .lineup-date-div:first-child .btn{
     border:1px solid #bd2025;
@@ -126,10 +169,105 @@
     
 }
 
-
+.acc{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* 지도 */
 #map{
-    width:100%;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+    height:400px;
+    margin-bottom: 20px;
+}
+
+
+
+/*accordion */
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 12px 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    
+}
+button.accordion span{
+    float:right;
+}
+
+button.accordion span img{
+    width:10px;
+}
+button.accordion::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 10px 10px;
+    background-color: white;
+    display: none;
+    margin-bottom: 0px;
+    opacity: 0.8;
+}
+
+
+
+
+
+@media (max-width:767px){
+    #map{
+    width:94%;
+    margin-left: auto;
+    margin-right: auto;
     height:250px;
+    margin-bottom: 10px;
+    }
+    
+    .acc{
+        width:94%;
+    }
+    .container{
+        overflow: hidden;
+    }
+    
+}
+.panel img{
+    width:100%;
+}
+
+#jujum{
+    background-color: #f0f5fa;
+    color:#0d3333;
+}
+
+#jujum .star-light{
+    color:#0d3333;
+    border-color: #0d3333;
+}
+
+/* 좋아요 */
+.like-btn{
+    background:none;
+    border:0;
+}
+.like-btn:focus{
+    outline:0;
+}
+.like-btn img{
+    width:25px;
+    
 }

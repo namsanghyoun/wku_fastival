@@ -8,19 +8,16 @@
   <meta charset="utf-8">
   <!--원광대 아이콘-->
   <link rel="icon" href="http://www.wku.ac.kr/wp-content/themes/wku/common/img/favicon.ico" type="image/x-icon">
-  <!--부트스트랩v4 적용-->
   <!--모바일우선-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no,maximum-scale=1.0,minimum-scale=1.0, user-scalable=0" />
+  <meta name="HandheldFriendly" content="true" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <!-- Bootstrap Core CSS -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <!-- Theme CSS -->
   <link href="/css/freelancer.min.css?=1" rel="stylesheet">
-
   <!-- Custom Fonts -->
   <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -35,27 +32,26 @@
   <meta property="og:image" content="썸네일 이미지 절대 경로" />
   <!--sns 포스팅 될 타이틀 값-->
   <meta property="og:title" content="title 입력" />
-  <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=	8a952cf2fface3940152207d01807d01"></script>
-
   <!-- sns head 설정 끄읏!-->
-  
-
-
 </head>
+
 <body id="page-top" class="index">
+  
 <%= yield %>
-    <!-- jQuery -->
+     <!--jQuery -->
     <script src="/vendor/jquery/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!-- Contact Form JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
     <script src="/js/jqBootstrapValidation.js"></script>
     <script src="/js/contact_me.js"></script>
     <!-- Theme JavaScript -->
-    <script src="/js/freelancer.min.js"></script>
-   
+    <script src="/js/freelancer.min.js?=q"></script>
+
     <script>
     $(window).load(function() {
     $('.post-module').hover(function() {
@@ -65,6 +61,36 @@
     }, 300);
     });
     });
+    </script>
+    <!--페북좋아요기능 건들지말것-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--모달-->
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // 아무데나 클릭하면 창 닫힘
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
     </script>
 </body>
 </html>
