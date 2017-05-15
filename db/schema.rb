@@ -15,6 +15,9 @@ ActiveRecord::Schema.define(version: 20170513145743) do
 
   create_table "jujums", force: :cascade do |t|
     t.string   "name"
+    t.string   "theme"
+    t.string   "introduce"
+    t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

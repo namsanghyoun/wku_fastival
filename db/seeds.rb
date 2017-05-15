@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Jujum.create(name:'학과1')
+Jujum.create(name:'컴퓨터공학과',theme:'오버워치',introduce:'컴공이주점한당 노잼일듯~~,~~~!',image:'/img/profile.png')
 Jujum.create(name:'학과2')
 Jujum.create(name:'학과3')
 Jujum.create(name:'학과4')

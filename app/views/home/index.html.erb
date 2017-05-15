@@ -1,6 +1,6 @@
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
-    <!-- Navigation -->
+    <!-- 네비게이션 -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
             <!--로고그림-->
@@ -13,7 +13,7 @@
                 <a class="navbar-brand" href="#page-top"><%= image_tag "chong.png"%></a>
             </div>
             
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- 네비게이션 오른쪽 바 -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="home">
@@ -37,19 +37,20 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+            <!-- 여기가지 네비 오른쪽 바 -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- 로고 + 오른쪽 바 -->
     </nav>
+    <!--네비게이션 끝-->
 
-    <!-- Header -->
+    <!-- 헤더  -->
     <header>
         <div class="container" id="maincontent" tabindex="-1">
             
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- 축제 일정 -->
     <section id="iljung">
         <div class="container">
             <div class="row">
@@ -79,7 +80,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- 라인 업 -->
     <section class="success" id="lineup">
         <div class="container">
             <div class="row">
@@ -116,22 +117,39 @@
               <h2>난장정보</h2>
               <hr class="star-light">
           </div>
-      </div>
+         <div id="map2"></div>
+            <!-- We will make a simple accordian with hover effects 
+The markup will have a list with images and the titles-->
+      <div class="acc">
+
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+          <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+        </ul>
       
-      <!--모달시작-->
-      <div class="row">
-      <div class="col-md-3">
-      <%= image_tag "by.jpg", id: "myImg", alt: "Trolltunga, Norway"%>
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+          <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
       </div>
-      <div class="col-md-3">
-      <%= image_tag "by.jpg", id: "myImg", alt: "Trolltunga, Norway"%>
       </div>
+          
       </div>
-      <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
       </div>
     <!--모달 끝-->
     </div>
@@ -149,20 +167,35 @@
       <div class="row">
         <!--지도 섹션임-->
         <div id="map"></div>
-        <script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>
         <!-- 주점정보 -->
         
         <div class="acc">
           
           <% @jujums.each do |j| %>
-            <button class="accordion" id="acc-panel<%=j.id%>-btn"><%= j.name%> <span>&#9662;</span></button>
+            <div class="accordion" id="acc-panel<%=j.id%>-btn">
+              <div class="acc-name"><%= j.name%></div>
+              <div class="acc-like-down">
+                <button class="like-btn"value="<%= j.id%>"><img src="/img/like.png"/></button>              
+                <span class="like-count"id="<%= j.id%>-count" value="<%= j.id%>"><%=@merong_count[j.id]%></span>
+                &#9662;
+              </div>
+            </div>
             <div class="panel" id="acc-panel<%= j.id%>" >
-              <button class="like-btn"value="<%= j.id%>"><img src="/img/like.png"/></button>
+              
               <input type="number" id="<%= j.id%>-hidden"value="<%=@merong_count[j.id]%>" style="display:none;"/>
               <input type="hidden" value="<%= @merong_no[j.id]%>" id="<%=j.id%>-no"/>
-              <span id="<%= j.id%>-count" value="<%= j.id%>"><%=@merong_count[j.id]%></span>
-              <img src="/img/portfolio/cabin.png"/>
-              <p>컴공은짱이얌 ㅎㅅㅎㅅㅎㅅㅎ~!!!</p>
+              <img src="<%=j.image%>"/>
+              <div class="panel-theme-div">
+                <span>테마</span>
+                <%= j.theme %>
+              </div>
+              <div class="panel-introduce-div">
+                <span>소개</span>
+                <%= j.introduce %>
+              </div>
+              <div class="panel-menu-div"> 
+                <span>메뉴</span>
+              </div>
             </div>
           <% end %>
           
@@ -172,7 +205,7 @@
 
 
 
-    <!-- Contact Section -->
+    <!-- 원 토크(won talk) -->
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -204,15 +237,18 @@
         </div>
     </section>
     
-    <!-- Footer -->
+    <!-- 풋터 -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>멋쟁이사자처럼 at 원광대학교</h3>
+                        
                     </div>
                     <div class="footer-col col-md-4">
+                      <h3>컴퓨터를 모르는 학생들이 <br>프로그래밍 교육을 통해 원하는 <br>IT서비스를 직접 런칭한다.</h3>
+                      <a class="likelionlink" href="https://likelion.net/" target="_blank"><img class="btn-social btn-outline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKFJn-t_y71BDQjbKjGormvFqlJM2HKHcPBjNhA-pnrp88XHLQ" alt="cha" /></a>
+                      <h3>멋쟁이사자처럼 at 원광대학교</h3>
                         <h3>Developer</h3>
                         <div class="fb-like" data-href="https://wku-fastival-social-science.c9users.io/" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true" data-colorscheme="dark"></div>
                         <ul class="list-inline">
@@ -258,7 +294,7 @@
     </footer>
 
 
-
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>
 <script>
   
 //좋아요
@@ -280,6 +316,64 @@
                 })
             }
         });
-</script>
-
+  
+  
+    var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new daum.maps.LatLng(35.967745, 126.956657), // 지도의 중심좌표
+            level: 1 // 지도의 확대 레벨
+        };  
     
+    var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    
+    var positions2 = [  // 마커의 위치
+      {
+         title: '컴퓨터공학과', 
+         latlng: new daum.maps.LatLng(35.967668, 126.956657),
+         sw: new daum.maps.LatLng(35.967622, 126.956578), // 사각형 영역의 남서쪽 좌표
+         ne: new daum.maps.LatLng(35.967696, 126.956710),
+         color:"#f09590"
+      },
+      {
+         title: '메롱', 
+         latlng: new daum.maps.LatLng(35.967828, 126.956733),
+         sw: new daum.maps.LatLng(35.967785, 126.956673), // 사각형 영역의 남서쪽 좌표
+         ne: new daum.maps.LatLng(35.967865, 126.956779),
+         color:"#95A5C3"
+
+      }
+      ]
+    
+
+    for(var i=0, len=positions2.length; i<len;i++){
+      
+       // 지도에 표시할 사각형을 생성합니다
+      var rectangleBounds = new daum.maps.LatLngBounds(positions2[i].sw, positions2[i].ne);
+
+      var rectangle = new daum.maps.Rectangle({
+          bounds: rectangleBounds, // 그려질 사각형의 영역정보입니다
+          strokeWeight: 4, // 선의 두께입니다
+          strokeColor: positions2[i].color, // 선의 색깔입니다
+          strokeOpacity: 1, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+          strokeStyle: 'solid', // 선의 스타일입니다
+          fillColor: positions2[i].color, // 채우기 색깔입니다
+          fillOpacity: 0.8 // 채우기 불투명도 입니다
+      });
+      rectangle.setMap(map); 
+      
+     
+
+    }
+    
+    for(var i=0, len=positions2.length; i<len;i++){
+      var customOverlay = new daum.maps.CustomOverlay({
+          position: positions2[i].latlng,
+          content: '<div class ="label" style="color:#000; border:none; border-radius:5px; background-color:#fff; opacity:0.7;"><span class="center">'+positions2[i].title+'</span></div>'
+      });
+      
+      // 커스텀 오버레이를 지도에 표시합니다
+      customOverlay.setMap(map);
+      
+    }
+</script>
+  

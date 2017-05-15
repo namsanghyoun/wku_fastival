@@ -18,7 +18,7 @@
  header{
     text-align:center;background:none;color:#fff; 
     background-position: center center;
-    background-image: url('/img/main.jpg');
+    background-image: url('/img/main.jpeg');
     background-size: cover;
     height: 600px;
     min-height:100%;
@@ -175,6 +175,7 @@
     margin-right: auto;
 }
 
+
 /* 지도 */
 #map{
     width:70%;
@@ -188,7 +189,7 @@
 
 /*accordion */
 
-button.accordion {
+div.accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -198,21 +199,21 @@ button.accordion {
     border: none;
     outline: none;
     transition: 0.4s;
-    
-}
-button.accordion span{
-    float:right;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
-button.accordion span img{
+
+div.accordion span img{
     width:10px;
 }
-button.accordion::after{
+div.accordion::after{
     content: '';
     display: block;
     clear: both;
 }
-button.accordion.active, button.accordion:hover {
+div.accordion.active, div.accordion:hover {
     background-color: #ddd;
 }
 
@@ -257,6 +258,12 @@ div.panel {
 #jujum .star-light{
     color:#0d3333;
     border-color: #0d3333;
+}
+
+
+/* Likelion 바로가기*/
+.likelionlink{
+    font-size:20px;
 }
 
 /* 좋아요 */

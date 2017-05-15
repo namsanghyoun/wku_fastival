@@ -17,7 +17,7 @@ class HomeController < ApplicationController
       @merong_no[m+1]=@no
     end
     
-    #쥬졈
+    #주점
     @jujums = Jujum.all
   end
   
