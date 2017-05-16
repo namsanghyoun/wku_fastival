@@ -1,7 +1,10 @@
-@import "compass/css3";
 
-@import "compass/css3/shared";
-
+@font-face {
+  font-family: 'Godo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+}
 
 /*!
  * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
@@ -9,12 +12,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
  body{
-    font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;overflow-x:hidden;
+    font-family:'Godo',sans-serif;overflow-x:hidden;
     -ms-content-zooming: none;
     -ms-touch-action: pan-x pan-y;
  
  }
- p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#fff;}h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 3px;text-align:center;max-width:250px;margin:25px auto 30px}hr.star-light:after,hr.star-primary:after{content:"";font-family:FontAwesome;display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}hr.star-light{border-color:#fff}hr.star-light:after{background-color:#18BC9C;color:#fff}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#fff;color:#2C3E50}.img-centered{margin:0 auto}
+ p{font-size:20px}p.small{font-size:16px}a,a.active,a:active,a:focus,a:hover{color:#fff;}h1,h2,h3,h4,h5,h6{font-family:'Godo',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}hr.star-light,hr.star-primary{padding:0;border:none;border-top:solid 3px;text-align:center;max-width:250px;margin:25px auto 30px}hr.star-light:after,hr.star-primary:after{content:"";font-family:FontAwesome;display:inline-block;position:relative;top:-.8em;font-size:2em;padding:0 .25em}hr.star-light{border-color:#fff}hr.star-light:after{background-color:#18BC9C;color:#fff}hr.star-primary{border-color:#2C3E50}hr.star-primary:after{background-color:#fff;color:#2C3E50}.img-centered{margin:0 auto}
  header{
     text-align:center;background:none;color:#fff; 
     background-position: center center;
@@ -89,7 +92,9 @@
 #div2-2,#div3-2{
     display:none;
 }
-
+#div2-3,#div3-3,#div4-3,#div5-3,#div6-3,#div7-3,#div8-3,#div9-3,#div10-3,#div11-3,#div12-3,#div13-3,#div14-3,#div15-3,#div16-3{
+    display:none;
+}
 
 #iljung{
     color:#662408;
@@ -342,4 +347,32 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
 
 #wontalr-star{
     border-color:#662408;
+}
+
+
+/* 난장 */
+.nanjang3-div img{
+    width:100%;
+    
+}
+
+.nanjang-div{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+
+
+.nanjang3-div .nanjang-img{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nanjang-row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
 }
