@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20170516055835) do
   create_table "nanjangs", force: :cascade do |t|
     t.string   "name"
     t.string   "introduce"
+    t.string   "color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

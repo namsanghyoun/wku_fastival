@@ -124,7 +124,11 @@
             <% for i in 0..3 %>
               <div class="nanjang-row">
               <% for j in 4*i+1..4*i+4 %>
-                <div class="nanjang2-div"><p class="btn btn3" rel="div<%=j%>-3"><%= Nanjang.find(j).name%></p></div>
+                <div class="nanjang2-div">
+                  <p class="btn btn3" rel="div<%=j%>-3" style="color:<%=Nanjang.find(j).color%>; border-color:<%=Nanjang.find(j).color%>; min-width:70px;" >
+                    <%= Nanjang.find(j).name%>
+                  </p>
+                </div>
               <% end %>
               </div>
             <% end %>
@@ -354,28 +358,28 @@
                         <ul class="list-inline">
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/16114004_1108042159321612_637880479576024445_n.jpg?oh=31d20445e69ce335167a7f4945d76337&oe=59B60599" alt="nam" />
-                                 <br>남상현(대표,서버관리)
+                                 <br>남상현
                             </li>
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/17884116_1155365071258305_7640656070213554283_n.jpg?oh=d7ee30ce75966b0707b12fd1dafbc8e6&oe=597B8AFC" alt="cha" />
-                                 <br>차건우(개발팀)
+                                 <br>차건우
                             </li>
                             
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-1/17800320_1166111836848728_4569011044192407070_n.jpg?oh=2536303c91026ba9b322e1f8f80c856c&oe=5978BF64" alt="myeong" />
-                                 <br>이명아(개발팀장)
+                                 <br>이명아
                             </li>
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/14195181_1035093266609323_837459870920167728_o.jpg?oh=8f4ef0bd77e7a9432cb838e5f1c2ab64&oe=59B5ED4F" alt="park" />
-                                 <br>박진철(개발팀)
+                                 <br>박진철
                             </li>
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/16832183_1197176993733617_187007560539027865_n.jpg?oh=3037308b43d0b6bc0536218f1baab46d&oe=59825850" alt="hwang" />
-                                 <br>황민영(디자인,개발)
+                                 <br>황민영
                             </li>
                             <li>
                                 <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/17522861_282177152205113_8962991098184110117_n.jpg?oh=8e3d96e417c4590fcb0a63820310311c&oe=59AECE5A" alt="an" />
-                                 <br>안지연(기획홍보팀장)
+                                 <br>안지연
                             </li>
                         </ul>
                     </div>

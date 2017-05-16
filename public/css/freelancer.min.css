@@ -375,4 +375,6 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
     flex-direction:row;
     flex-wrap:nowrap;
     justify-content:space-around;
+    margin:2px;
 }
+
