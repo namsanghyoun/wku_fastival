@@ -92,7 +92,9 @@
 #div2-2,#div3-2{
     display:none;
 }
-
+#div2-3,#div3-3,#div4-3,#div5-3,#div6-3,#div7-3,#div8-3,#div9-3,#div10-3,#div11-3,#div12-3,#div13-3,#div14-3,#div15-3,#div16-3{
+    display:none;
+}
 
 #iljung{
     color:#662408;
@@ -345,4 +347,32 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
 
 #wontalr-star{
     border-color:#662408;
+}
+
+
+/* 난장 */
+.nanjang3-div img{
+    width:100%;
+    
+}
+
+.nanjang-div{
+    display: flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+}
+
+
+.nanjang3-div .nanjang-img{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nanjang-row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
 }
