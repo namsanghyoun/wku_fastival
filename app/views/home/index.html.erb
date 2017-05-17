@@ -125,7 +125,7 @@
               <div class="nanjang-row">
               <% for j in 4*i+1..4*i+4 %>
                 <div class="nanjang2-div">
-                  <p class="btn btn3" rel="div<%=j%>-3" style="color:<%=Nanjang.find(j).color%>; border-color:<%=Nanjang.find(j).color%>; min-width:70px;" value="<%=j%>">
+                  <p class="btn btn3" rel="div<%=j%>-3" style="color:<%=Nanjang.find(j).color%>; border-color:<%=Nanjang.find(j).color%>; min-width:70px; border-width:1.3px;" value="<%=j%>">
                     <%= Nanjang.find(j).name%>
                   </p>
                 </div>
@@ -480,5 +480,7 @@
       customOverlay.setMap(map);
       
     }
+    
+   
 </script>
   
