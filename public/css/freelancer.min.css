@@ -47,7 +47,7 @@
     header{
         text-align:center;background:none;color:#fff; 
         background-position: center center;
-        background-image: url('/img/main3.jpg');
+        background-image: url('/assets/main.jpg');
         background-size: cover;
         height: 600px;
         min-height:100%;
