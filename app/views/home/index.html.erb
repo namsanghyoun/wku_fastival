@@ -45,9 +45,7 @@
 
     <!-- 헤더  -->
     <header>
-        <div class="container" id="maincontent" tabindex="-1">
-            
-        </div>
+    
     </header>
 
     <!-- 축제 일정 -->
@@ -67,13 +65,13 @@
                 </div>
                 <div class="iljung2-div">
                     <div id="div1"  class="iljung-iljung-div">
-                        <%= image_tag "cabin.png"%>
+                        <%= image_tag "schedule1.jpg"%>
                     </div>
                     <div id="div2"  class="iljung-iljung-div">
-                        <%= image_tag "cake.png"%>
+                        <%= image_tag "schedule2.jpg"%>
                     </div>
                     <div id="div3"  class="iljung-iljung-div">
-                        <%= image_tag "circus.png"%>
+                        <%= image_tag "schedule3.jpg"%>
                     </div>
                 </div>
             </div>  
@@ -123,22 +121,23 @@
             
             <% for i in 0..3 %>
               <div class="nanjang-row">
-              <% for j in 4*i+1..4*i+4 %>
-                <div class="nanjang2-div">
-                  <p class="btn btn3" rel="div<%=j%>-3" style="color:<%=Nanjang.find(j).color%>; border-color:<%=Nanjang.find(j).color%>; min-width:70px; border-width:1.3px;" value="<%=j%>">
-                    <%= Nanjang.find(j).name%>
-                  </p>
-                </div>
-              <% end %>
+                  <% for j in 3*i+1..3*i+3 %>
+                    <div class="nanjang2-div">
+                      <p class="btn btn3" rel="div<%=j%>-3" style="color:<%=Nanjang.find(j).color%>; border-color:<%=Nanjang.find(j).color%>; min-width:90px;border-width:1.3px; padding:5px 0px" value="<%=j%>">
+                        <%= Nanjang.find(j).name%>
+                      </p>
+                    </div>
+              
+                  <% end %>
               </div>
             <% end %>
           </div>
           <div class="nanjang3-div">
-            <% for i in 0..3 %>
+            <% for i in 0..2 %>
               <% for j in 4*i+1..4*i+4 %>
                   <div id="div<%= j%>-3"  class="nanjang3-div">
                       <div class="nanjang-img">
-                        <%= image_tag "cabin.png"%>
+                        <%= image_tag ('wku2.png') %>
                       </div>
                       <div class="nanjang-introduce">
                         <%= Nanjang.find(j).introduce%>
@@ -149,112 +148,7 @@
                 
           </div>
         </div>
-              <!--         
-                    <div class="acc">
-                      <ul class="nav nav-tabs" style="background-color:pink">
-                        <li class="active"><a data-toggle="tab" href="#menu1">원불교학과</a></li>
-                        <li><a data-toggle="tab" href="#menu2">몽수룸</a></li>
-                        <li><a data-toggle="tab" href="#menu3">백두</a></li>
-                        <li><a data-toggle="tab" href="#menu4">온에어</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="menu1" class="tab-pane fade in active">
-                          <h3>난장1번</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                          <h3>난장2번</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                          <h3>난장3번</h3>
-                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu4" class="tab-pane fade">
-                          <h3>난장4번</h3>
-                          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                    </div>
-                    <ul class="nav nav-tabs" style="background-color:pink">
-                        <li class="active"><a data-toggle="tab" href="#menu5">WITH</a></li>
-                        <li><a data-toggle="tab" href="#menu6">소방행정학과학생회</a></li>
-                        <li><a data-toggle="tab" href="#menu7">그린나래</a></li>
-                        <li><a data-toggle="tab" href="#menu8">행정학과학생회</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="menu5" class="tab-pane fade in active">
-                          <h3>HOME</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu6" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu7" class="tab-pane fade">
-                          <h3>Menu 2</h3>
-                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu8" class="tab-pane fade">
-                          <h3>Menu 3</h3>
-                          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                    </div>
-                    <ul class="nav nav-tabs" style="background-color:pink">
-                        <li class="active"><a data-toggle="tab" href="#menu9">원불교대학생회</a></li>
-                        <li><a data-toggle="tab" href="#menu10">여학생회</a></li>
-                        <li><a data-toggle="tab" href="#menu11">GNC</a></li>
-                        <li><a data-toggle="tab" href="#menu12">난장12번</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="menu9" class="tab-pane fade in active">
-                          <h3>HOME</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu10" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu11" class="tab-pane fade">
-                          <h3>Menu 2</h3>
-                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu12" class="tab-pane fade">
-                          <h3>Menu 3</h3>
-                          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                    </div>
-                    <ul class="nav nav-tabs" style="background-color:pink">
-                        <li class="active"><a data-toggle="tab" href="#menu13">난장13번</a></li>
-                        <li><a data-toggle="tab" href="#menu14">난장14번</a></li>
-                        <li><a data-toggle="tab" href="#menu15">난장15번</a></li>
-                        <li><a data-toggle="tab" href="#menu16">난장16번</a></li>
-                      </ul>
-                    
-                      <div class="tab-content">
-                        <div id="menu13" class="tab-pane fade in active">
-                          <h3>HOME</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                        <div id="menu14" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div id="menu15" class="tab-pane fade">
-                          <h3>Menu 2</h3>
-                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        </div>
-                        <div id="menu16" class="tab-pane fade">
-                          <h3>Menu 3</h3>
-                          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        </div>
-                    </div>
-                    </div>-->
-          
       </div>
-     
     </section>
     
 <!--주점섹션임-->
@@ -286,14 +180,10 @@
               
               <input type="number" id="<%= j.id%>-hidden"value="<%=@merong_count[j.id]%>" style="display:none;"/>
               <input type="hidden" value="<%= @merong_no[j.id]%>" id="<%=j.id%>-no"/>
-              <img src="<%=j.image%>"/>
-              <div class="panel-theme-div">
-                <span>테마</span>
-                <%= j.theme %>
-              </div>
+              <img src="<%=image_tag 'cabin.jpg'%>"/>
               <div class="panel-introduce-div">
                 <span>소개</span>
-                <%= j.introduce %>
+                <%= j.theme %>
               </div>
               <div class="panel-menu-div"> 
                 <span>메뉴</span>
@@ -357,28 +247,28 @@
                         <div class="fb-like" data-href="http://www.wontop.net" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="true" data-colorscheme="light"></div>
                         <ul class="list-inline">
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/16114004_1108042159321612_637880479576024445_n.jpg?oh=31d20445e69ce335167a7f4945d76337&oe=59B60599" alt="nam" />
+                                <%= image_tag("nam.jpg", :class => "btn-social btn-outline")%>
                                  <br>남상현
                             </li>
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/17884116_1155365071258305_7640656070213554283_n.jpg?oh=d7ee30ce75966b0707b12fd1dafbc8e6&oe=597B8AFC" alt="cha" />
+                                <%= image_tag("cha.jpg", :class =>"btn-social btn-outline")%>
                                  <br>차건우
                             </li>
                             
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-1/17800320_1166111836848728_4569011044192407070_n.jpg?oh=2536303c91026ba9b322e1f8f80c856c&oe=5978BF64" alt="myeong" />
+                                <%= image_tag("myong.jpg", :class => "btn-social btn-outline")%>
                                  <br>이명아
                             </li>
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t31.0-8/14195181_1035093266609323_837459870920167728_o.jpg?oh=8f4ef0bd77e7a9432cb838e5f1c2ab64&oe=59B5ED4F" alt="park" />
+                                <%= image_tag("park.jpg", :class => "btn-social btn-outline")%>
                                  <br>박진철
                             </li>
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/16832183_1197176993733617_187007560539027865_n.jpg?oh=3037308b43d0b6bc0536218f1baab46d&oe=59825850" alt="hwang" />
+                                <%= image_tag("hwang.jpg", :class =>"btn-social btn-outline")%>
                                  <br>황민영
                             </li>
                             <li>
-                                <img class="btn-social btn-outline" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/17522861_282177152205113_8962991098184110117_n.jpg?oh=8e3d96e417c4590fcb0a63820310311c&oe=59AECE5A" alt="an" />
+                                <%= image_tag("ahn.jpg", :class =>"btn-social btn-outline")%>
                                  <br>안지연
                             </li>
                         </ul>
@@ -391,7 +281,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                         <a href="https://likelion.net/" target="_blink" style="text-decoration:none">&copy; Likelion at WKU 2017</a>
+                         <a href="https://likelion.net/" target="_blink" style="color:#464646">&copy; Likelion at WKU 2017</a>
                     </div>
                 </div>
             </div>
@@ -425,7 +315,7 @@
   
     var mapContainer = document.getElementById('map2'), // 지도를 표시할 div 
         mapOption = { 
-            center: new daum.maps.LatLng(35.967745, 126.956657), // 지도의 중심좌표
+            center: new daum.maps.LatLng(35.967797, 126.956795), // 지도의 중심좌표
             level: 1 // 지도의 확대 레벨
         };  
     
@@ -462,7 +352,7 @@
         color:"#deb29e"
       },
       {
-        title: '원불교학과', 
+        title: '원불교 대학생회', 
         latlng: new daum.maps.LatLng(35.967635, 126.956790),
         sw: new daum.maps.LatLng(35.967590, 126.956740), // 사각형 영역의 남서쪽 좌표
         ne: new daum.maps.LatLng(35.967667, 126.956845),
@@ -478,7 +368,7 @@
       {
         title: '행정학과', 
         latlng: new daum.maps.LatLng(35.968010, 126.956780),
-        sw: new daum.maps.LatLng(35.967974, 126.956745), // 사각형 영역의 남서쪽 좌표
+        sw: new daum.maps.LatLng(35.967974, 126.956735), // 사각형 영역의 남서쪽 좌표
         ne: new daum.maps.LatLng(35.968050, 126.956840), 
         color:"#de625b"
       },
@@ -498,14 +388,17 @@
       },
       {
         title: '여학생회', 
-        latlng: new daum.maps.LatLng(35.967696, 126.956705),
-        sw: new daum.maps.LatLng(35.967685, 126.956640), // 사각형 영역의 남서쪽 좌표
-        ne: new daum.maps.LatLng(35.967724, 126.956741), 
+        latlng: new daum.maps.LatLng(35.967720, 126.956670),
+        sw: new daum.maps.LatLng(35.967675, 126.956620), // 사각형 영역의 남서쪽 좌표
+        ne: new daum.maps.LatLng(35.967755, 126.956725), 
         color:"#8db5b0"
       },
       {
-          title:'hh',
-          color:"#c9a9ab"
+        title: 'GNC', 
+        latlng: new daum.maps.LatLng(35.967620, 126.956625),
+        sw: new daum.maps.LatLng(35.967570, 126.956570), // 사각형 영역의 남서쪽 좌표
+        ne: new daum.maps.LatLng(35.967655, 126.956680), 
+        color:"#c9a9ab"
       },
       ]
     
