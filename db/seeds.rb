@@ -5,28 +5,30 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
-Jujum.create(name:'한의대 경우회',theme:'한의대가 대신 전해드립니다(메신저)',introduce:'',image:'/img/profile.png')
-Jujum.create(name:'생명과학부',theme:'Rap 하는 lab(힙합)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'체육교육학과',theme:'거점',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'노세',theme:'수학 with 술학',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'수학정보통계학부',theme:'수학 with 술학',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'반도체디스플레이',theme:'반도체디스플레이 주점(감성주점)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'렛스고',theme:'야간주점(클럽식감성주점)',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'경찰행정학과',theme:'경행주막(조선시대 주막)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'수학정보통계학부',theme:'수학 with 술학',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'생명과학부',theme:'Rap 하는 lab(힙합)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'너나들이',theme:'회장님이 미쳤어요',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'스포츠과학부',theme:'주점(DJ잉))',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'경영대학',theme:'심야의 샤우팅(이벤트, 클럽)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'경영학부',theme:'니가가라 하와이',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'체육교육학과',theme:'거점',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'렛스고',theme:'야간주점(클럽식감성주점)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'패션디자인산업학과',theme:'쇼미더패디',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'한약학과 학생회',theme:'약빤주점(만남)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'컴퓨터소프트웨어공학과',theme:'오빠 우리집으로 오버워치 하러갈래? (클럽파티 및 헌팅)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'경영대학 학생회',theme:'심야의 샤우팅(이벤트, 클럽)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'여행스케치',theme:'여행스케치 주점',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'다온',theme:'헌나기전에 팅구들데리구와(헌팅)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'경영학부 학생회',theme:'니가가라 하와이',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'성공하자',theme:'짝(만남)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'너나들이 학생회',theme:'회장님이 미쳤어요',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'간호학과 학생회',theme:'angelinurse(이벤트)',introduce:'#',image:'/img/profile.png')
-Jujum.create(name:'토목환경공학과 학생회',theme:'돈 없어도 술 먹을 수 있다',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'노세',theme:'수학 with 술학',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'거북선',theme:'돛단배',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'한의대 경우회',theme:'한의대가 대신 전해드립니다(메신저)',introduce:'',image:'/img/profile.png')
+Jujum.create(name:'반도체디스플레이',theme:'반도체디스플레이 주점(감성주점)',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'FC리더스',theme:'야간주점',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'다온',theme:'헌나기전에 팅구들데리구와(헌팅)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'여행스케치',theme:'여행스케치 주점',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'간호학과 학생회',theme:'angelinurse(이벤트)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'컴퓨터소프트웨어공학과',theme:'오빠 우리집으로 오버워치 하러갈래? (클럽파티 및 헌팅)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'성공하자',theme:'짝(만남)',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'토목환경공학과 학생회',theme:'돈 없어도 술 먹을 수 있다',introduce:'#',image:'/img/profile.png')
+
+
 
 
 

@@ -21,7 +21,7 @@
  header{
     text-align:center;background:none;color:#fff; 
     background-position: center center;
-    background-image: url('/assets/main.jpg');
+    background-image: url('/img/main.jpeg');
     background-size: cover;
     height: 600px;
     min-height:100%;
