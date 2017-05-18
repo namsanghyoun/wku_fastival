@@ -27,20 +27,21 @@ Jujum.create(name:'간호학과 학생회',theme:'angelinurse(이벤트)',introd
 Jujum.create(name:'컴퓨터소프트웨어공학과',theme:'오빠 우리집으로 오버워치 하러갈래? (클럽파티 및 헌팅)',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'성공하자',theme:'짝(만남)',introduce:'#',image:'/img/profile.png')
 Jujum.create(name:'토목환경공학과 학생회',theme:'돈 없어도 술 먹을 수 있다',introduce:'#',image:'/img/profile.png')
+Jujum.create(name:'외국인',theme:'',introduce:'#',image:'/img/profile.png')
 
 
 
 
 
-Nanjang.create(name:'몽수룸',introduce:'악세사리 마켓(악세사리, 간식)',color:"#95A5C3")
-Nanjang.create(name:'온에어',introduce:'온에어 완판 꼬치집(간식)',color:"#deb29e")
-Nanjang.create(name:'WITH',introduce:'나만의 의미있는 작은 결혼(웨딩관련 게임, 홍보)',color:"#bd9dc7")
-Nanjang.create(name:'그린나래',introduce:'그린카페(카페, 뽑기)',color:"#de625b")
-Nanjang.create(name:'원불교학과',introduce:'산들산들(책갈피, 이름시, 간식)',color:"#f09590")
-Nanjang.create(name:'백두',introduce:'난장판(간식)',color:"#7F9FA4")
-Nanjang.create(name:'행정학과',introduce:'손식당(회장님 마음대로)',color:"#887b8f")
-Nanjang.create(name:'원불교 대학생회',introduce:'사드말고 평화오라! "평화의 작은불씨"',color:"#b5bf8e")
-Nanjang.create(name:'소방행정학과',introduce:'불타는 다방(홍보, 간식)',color:"#e68b60")
+Nanjang.create(name:'몽수룸',introduce:'악세사리 마켓(악세사리, 간식)',color:"#f09590")
+Nanjang.create(name:'온에어',introduce:'온에어 완판 꼬치집(간식)',color:"#95A5C3")
+Nanjang.create(name:'WITH',introduce:'나만의 의미있는 작은 결혼(웨딩관련 게임, 홍보)',color:"#7F9FA4")
+Nanjang.create(name:'그린나래',introduce:'그린카페(카페, 뽑기)',color:"#deb29e")
+Nanjang.create(name:'원불교학과',introduce:'산들산들(책갈피, 이름시, 간식)',color:"#bd9dc7")
+Nanjang.create(name:'백두',introduce:'난장판(간식)',color:"#e68b60")
+Nanjang.create(name:'행정학과',introduce:'손식당(회장님 마음대로)',color:"#de625b")
+Nanjang.create(name:'원불교 대학생회',introduce:'사드말고 평화오라! "평화의 작은불씨"',color:"#887b8f")
+Nanjang.create(name:'소방행정학과',introduce:'불타는 다방(홍보, 간식)',color:"#b5bf8e")
 Nanjang.create(name:'여학생회',introduce:'소녀야, 너는 반짝이는 별',color:"#8db5b0")
 Nanjang.create(name:'GNC',introduce:'GNC story' ,color:"#c9a9ab")
 Nanjang.create(name:'',introduce:'' ,color:"#fff")
