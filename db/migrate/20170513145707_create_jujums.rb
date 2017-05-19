@@ -5,6 +5,7 @@ class CreateJujums < ActiveRecord::Migration
       t.string :theme
       t.string :introduce
       t.string :image
+      t.string :menu
       t.timestamps null: false
     end
   end

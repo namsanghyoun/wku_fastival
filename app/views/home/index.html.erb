@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @myeongaa
+ Sign out
+ Unwatch 2
+  Star 0
+  Fork 0 namsanghyoun/wku_fastival
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathwku_fastival/app/views/home/index.html.erb
+ecfe7b3  22 hours ago
+ social_science 최종코드
+1 contributor
+RawBlameHistory     
+444 lines (396 sloc)  17.8 KB
 <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
 
     <!-- 네비게이션 -->
@@ -182,13 +200,21 @@
               
               <input type="number" id="<%= j.id%>-hidden"value="<%=@merong_count[j.id]%>" style="display:none;"/>
               <input type="hidden" value="<%= @merong_no[j.id]%>" id="<%=j.id%>-no"/>
-              <%=image_tag 'cabin.jpg'%>
+              <%=image_tag j.image %>
+              <div class="panel-name-div">
+                <span><%= j.name %></span>
+              </div>
+              <div class="panel-theme-div">
+                <span>테마</span>
+                <%= j.theme %>
+              </div>
               <div class="panel-introduce-div">
                 <span>소개</span>
-                <%= j.theme %>
+                <%= j.introduce %>
               </div>
               <div class="panel-menu-div"> 
                 <span>메뉴</span>
+                <%=image_tag j.menu %>
               </div>
             </div>
           <% end %>
@@ -290,9 +316,9 @@
         </div>
     </footer>
 
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=8a952cf2fface3940152207d01807d01"></script>
+<!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=8a952cf2fface3940152207d01807d01"></script>-->
 
-<!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>-->
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>
 <script>
   
 //좋아요
@@ -338,7 +364,6 @@
          sw: new daum.maps.LatLng(35.967879, 126.956853), // 사각형 영역의 남서쪽 좌표
          ne: new daum.maps.LatLng(35.967962, 126.956951),
          color:"#95A5C3"
-
       },
       {
         title: 'WITH', 
@@ -406,12 +431,10 @@
       
       ]
     
-
     for(var i=0, len=positions2.length; i<len;i++){
       
        // 지도에 표시할 사각형을 생성합니다
       var rectangleBounds = new daum.maps.LatLngBounds(positions2[i].sw, positions2[i].ne);
-
       var rectangle = new daum.maps.Rectangle({
           bounds: rectangleBounds, // 그려질 사각형의 영역정보입니다
           strokeWeight: 4, // 선의 두께입니다
@@ -424,7 +447,6 @@
       rectangle.setMap(map); 
       
      
-
     }
     
     for(var i=0, len=positions2.length; i<len;i++){

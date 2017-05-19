@@ -254,7 +254,7 @@ div.panel {
     color:#662408;
 }
 
-div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div{
+div.panel .panel-introduce-div, div.panel .panel-menu-div, div.panel .panel-theme-div, div.panel .panel-name-div{
     text-align: center;
     display: flex;
     flex-direction:column;
@@ -270,6 +270,17 @@ div.panel .panel-introduce-div span, div.panel .panel-menu-div span, div.panel .
     padding-bottom: 3px;
     margin-bottom: 7px;
     
+}
+
+div.panel .panel-name-div span{
+    font-size: 1.5em;
+    font-weight: bold;
+    width:100%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
 }
 
 

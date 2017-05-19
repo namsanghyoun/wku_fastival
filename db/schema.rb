@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170516055835) do
     t.string   "theme"
     t.string   "introduce"
     t.string   "image"
+    t.string   "menu"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
