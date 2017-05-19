@@ -6,22 +6,22 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Jujum.create(name:'경찰행정학과',theme:'경행주막(조선시대 주막)',
-introduce:'✔️ 술이 술〰술〰 들어가는 맛은 물론이고 다양하기까지한데 심지어 고퀄리티의 안주 !
-✔️ 안오고는 못 배기는, 눈도👁 귀도👂🏻 입도👄 즐거운 분위기
-✔️ 다른 주점과 달리 경행주점에는 ❗막걸리❗또한 준비되어있습니다🤗
-✔️ 거기에 ❗아이스크림❗까지 
+introduce:'✔️ 술이 술〰술〰 들어가는 맛은 물론이고 다양하기까지한데 심지어 고퀄리티의 안주 !<br>
+✔️ 안오고는 못 배기는, 눈도👁 귀도👂🏻 입도👄 즐거운 분위기<br>
+✔️ 다른 주점과 달리 경행주점에는 ❗막걸리❗또한 준비되어있습니다🤗<br>
+✔️ 거기에 ❗아이스크림❗까지 <br>
 ✔️ 꽝없는❗추억의 뽑기❗도 함께 즐기고 가세요〰',
 image:'/img/gyeonghang.jpg',menu:'cabin.jpg')
 Jujum.create(name:'수학정보통계학부',theme:'수학 with 술학',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'생명과학부',theme:'Rap 하는 lab(힙합)',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'너나들이',theme:'회장님이 미쳤어요',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
-Jujum.create(name:'스포츠과학부',theme:'주점(DJ잉))',introduce:'스포츠과학부입니다! 긴말하지 않겠습니다~ 원대 최고 주점 직접확인해보세요~',image:'/img/sports.jpg',menu:'cabin.jpg')
+Jujum.create(name:'스포츠과학부',theme:'주점(DJ잉))',introduce:'스포츠과학부입니다!<br>긴말하지 않겠습니다~ 원대 최고 주점 직접확인해보세요~',image:'/img/sports.jpg',menu:'cabin.jpg')
 Jujum.create(name:'경영대학',theme:'심야의 샤우팅(이벤트, 클럽)',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'경영학부',theme:'니가가라 하와이',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'체육교육학과',theme:'거점',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'렛스고',theme:'야간주점(클럽식감성주점)',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'패션디자인산업학과',theme:'쇼미더패디',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
-Jujum.create(name:'한약학과 학생회',theme:'약빤주점(만남)',introduce:'저희 자체 개발 칵테일 팔아요! 안주도 직접 개발한 파스타 팔아요!',image:'cabin.jpg',menu:'cabin.jpg')
+Jujum.create(name:'한약학과 학생회',theme:'약빤주점(만남)',introduce:'저희 자체 개발 칵테일 팔아요!<br> 안주도 직접 개발한 파스타 팔아요!',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'노세',theme:'수학 with 술학',introduce:'#',image:'cabin.jpg',menu:'cabin.jpg')
 Jujum.create(name:'거북선',theme:'돛단배',introduce:'#',image:'/img/geobuk.jpg',menu:'cabin.jpg')
 Jujum.create(name:'한의대 경우회',theme:'한의대가 대신 전해드립니다(메신저)',introduce:'',image:'cabin.jpg',menu:'cabin.jpg')
