@@ -4,6 +4,7 @@ class CreateNanjangs < ActiveRecord::Migration
       t.string :name
       t.string :introduce
       t.string :color
+      t.string :image
       t.timestamps null: false
     end
   end

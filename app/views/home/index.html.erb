@@ -10,8 +10,7 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="#page-top"><%=image_tag "wku2.png"%></a>
-                <a class="navbar-brand cross" href="#page-top"><%= image_tag "cross.png"%></a>
-                <a class="navbar-brand" href="#page-top"><%= image_tag "chong.png"%></a>
+                
             </div>
             
             <!-- 네비게이션 오른쪽 바 -->
@@ -124,7 +123,9 @@
               <% for j in 3*i+1..3*i+3 %>
                   <div id="div<%= j%>-3"  class="nanjang3-div">
                       <div class="nanjang-img">
-                        <%= image_tag ('wku2.png') %>
+                        <% unless Nanjang.find(j).image == nil%>
+                          <%= image_tag (Nanjang.find(j).image) %>
+                        <% end %>
                       </div>
                       <div class="nanjang-name-div">
                         <span><%= Nanjang.find(j).name%></span>
@@ -186,7 +187,9 @@
               
               <input type="number" id="<%= j.id%>-hidden"value="<%=@merong_count[j.id]%>" style="display:none;"/>
               <input type="hidden" value="<%= @merong_no[j.id]%>" id="<%=j.id%>-no"/>
-              <%=image_tag j.image %>
+              <% unless j.image == nil %>
+                <%=image_tag j.image %>
+              <% end %>
               <div class="panel-name-div">
                 <span><%= j.name %></span>
               </div>
@@ -200,7 +203,9 @@
               </div>
               <div class="panel-menu-div"> 
                 <span>메뉴</span>
-                <%=image_tag j.menu %>
+                <% unless j.menu == nil%>
+                  <%=image_tag j.menu %>
+                <% end %>
               </div>
             </div>
           <% end %>
