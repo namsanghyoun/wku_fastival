@@ -131,7 +131,7 @@
                       </div>
                       <div class="nanjang-introduce-div">
                         <span>소개</span>
-                        <%= Nanjang.find(j).introduce%>
+                        <%= Nanjang.find(j).introduce.html_safe%>
                       </div>
                       
                     </div>
@@ -347,7 +347,7 @@
         </div>
     </footer>
 
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=ec6be4310dd318eb66a8e463fd384cd1"></script>
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=8a952cf2fface3940152207d01807d01"></script>
 <!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=ec6be4310dd318eb66a8e463fd384cd1"></script>-->
 
 <script>
@@ -459,6 +459,13 @@
         ne: new daum.maps.LatLng(35.967655, 126.956680), 
         color:"#c9a9ab"
       },
+      {
+        title: '총동아리연합회', 
+        latlng: new daum.maps.LatLng(35.968210, 126.956920),
+        sw: new daum.maps.LatLng(35.968174, 126.956875), // 사각형 영역의 남서쪽 좌표
+        ne: new daum.maps.LatLng(35.968250, 126.956980), 
+        color:"#e6ca70"
+      }
       
       ]
     
