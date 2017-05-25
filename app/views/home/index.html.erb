@@ -15,7 +15,7 @@
             <!-- 네비게이션 오른쪽 바 -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll">
+                    <li class="home">
                         <a href="#page-top">홈</a>
                     </li>
                     <li class="page-scroll">
@@ -131,7 +131,7 @@
                       </div>
                       <div class="nanjang-introduce-div">
                         <span>소개</span>
-                        <%= Nanjang.find(j).introduce.html_safe%>
+                        <%= Nanjang.find(j).introduce%>
                       </div>
                       
                     </div>
@@ -336,15 +336,10 @@
                          <a href="https://likelion.net/" target="_blink" style="color:#464646">&copy; Likelion at WKU 2017</a>
                          <br>
                          <!--광고 자바스크립트-->
-                          <script type="text/javascript">
-                          (function(cl,i,c,k,m,o,n){m=cl.location.protocol+c;o=cl.referrer;m+='&mon_rf='+encodeURIComponent(o);
-                          n='<'+i+' type="text/javascript" src="'+m+'"></'+i+'>';cl.writeln(n);
-                          })(document,'script','//mtab.clickmon.co.kr/pop/wp_m_320_js.php?PopAd=CM_M_1003067%7C%5E%7CCM_A_1034148%7C%5E%7CAdver_M_1003115&rt_ad_id_code=RTA_104864');
-                          </script>
-                          <script type="text/javascript">
+                         <script type="text/javascript">
                           (function(cl,i,c,k,m,o,n){m=cl.location.protocol+c;o=cl.referrer;m+='&mon_rf='+encodeURIComponent(o);
                           n='<'+i+' width="320" height="100" allowtransparency="true" src="'+m+'" frameborder="0" scrolling="no"></'+i+'>';cl.write(n);
-                          })(document,'iframe','//mtab.clickmon.co.kr/pop/mcpi_roll_320_100.php?mer=CM_M_1032702%7CCM_M_1033938%7CCM_M_1033940%7CCM_M_1033942%7CCM_M_1033961%7CCM_M_1033998%7CCM_M_1034000%7C&PopAd=CM_A_1034148');
+                          })(document,'iframe','//mtab.clickmon.co.kr/pop/mcpi_roll_320_100.php?mer=CM_M_1033938%7CCM_M_1032702%7CCM_M_1033940%7CCM_M_1033942%7CCM_M_1033961%7CCM_M_1033998%7CCM_M_1034000%7C&PopAd=CM_A_1034148');
                           </script>
                     </div>
                 </div>
@@ -352,8 +347,8 @@
         </div>
     </footer>
 
-<!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>-->
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=ec6be4310dd318eb66a8e463fd384cd1"></script>
+<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=da11ef6f3596510174ab5e0c45bb6759"></script>
+<!--<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=ec6be4310dd318eb66a8e463fd384cd1"></script>-->
 
 <script>
   
@@ -464,13 +459,6 @@
         ne: new daum.maps.LatLng(35.967655, 126.956680), 
         color:"#c9a9ab"
       },
-      {
-        title: '총동아리연합회', 
-        latlng: new daum.maps.LatLng(35.968210, 126.956920),
-        sw: new daum.maps.LatLng(35.968174, 126.956875), // 사각형 영역의 남서쪽 좌표
-        ne: new daum.maps.LatLng(35.968250, 126.956980), 
-        color:"#e6ca70"
-      }
       
       ]
     
